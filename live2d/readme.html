@@ -1,0 +1,88 @@
+<p><a href="https://badge.fury.io/js/hexo-helper-live2d"><img src="https://badge.fury.io/js/hexo-helper-live2d.svg" alt="npm version"></a></p>
+<h1 id="hexo-helper-live2d"><a href="#hexo-helper-live2d" class="headerlink" title="hexo-helper-live2d"></a>hexo-helper-live2d</h1><blockquote>
+<p>现已更新 2.0</p>
+</blockquote>
+<p><a href="./Readme_en.md">English README</a> by <a href="https://github.com/KiritoXF">KiritoXF</a></p>
+<p><br></p>
+<p>为你的hexo添加色气满满的live2d吧！</p>
+<pre><code>npm install -save hexo-helper-live2d
+</code></pre><p>示例： <a href="https://huaji8.top/post/live2d-plugin-2.0/">https://huaji8.top/post/live2d-plugin-2.0/</a></p>
+<h2 id="截图"><a href="#截图" class="headerlink" title="截图:"></a>截图:</h2><h4 id="Epsilon2-1"><a href="#Epsilon2-1" class="headerlink" title="Epsilon2.1"></a>Epsilon2.1</h4><p><img src="https://huaji8.top/img/live2d/Epsilon2.1.gif" alt=""></p>
+<h4 id="Gantzert-Felixander"><a href="#Gantzert-Felixander" class="headerlink" title="Gantzert_Felixander"></a>Gantzert_Felixander</h4><p><img src="https://huaji8.top/img/live2d/Gantzert_Felixander.gif" alt=""></p>
+<h4 id="haru"><a href="#haru" class="headerlink" title="haru"></a>haru</h4><p><img src="https://huaji8.top/img/live2d/haru.gif" alt=""></p>
+<h4 id="miku"><a href="#miku" class="headerlink" title="miku"></a>miku</h4><p><img src="https://huaji8.top/img/live2d/miku.gif" alt=""></p>
+<h4 id="ni-j"><a href="#ni-j" class="headerlink" title="ni-j"></a>ni-j</h4><p><img src="https://huaji8.top/img/live2d/ni-j.gif" alt=""></p>
+<h4 id="nico"><a href="#nico" class="headerlink" title="nico"></a>nico</h4><p><img src="https://huaji8.top/img/live2d/nico.gif" alt=""></p>
+<h4 id="nietzche"><a href="#nietzche" class="headerlink" title="nietzche"></a>nietzche</h4><p><img src="https://huaji8.top/img/live2d/nietzche.gif" alt=""></p>
+<h4 id="nipsilon"><a href="#nipsilon" class="headerlink" title="nipsilon"></a>nipsilon</h4><p><img src="https://huaji8.top/img/live2d/nipsilon.gif" alt=""></p>
+<h4 id="nito"><a href="#nito" class="headerlink" title="nito"></a>nito</h4><p><img src="https://huaji8.top/img/live2d/nito.gif" alt=""></p>
+<h4 id="shizuku"><a href="#shizuku" class="headerlink" title="shizuku"></a>shizuku</h4><p><img src="https://huaji8.top/img/live2d/shizuku.gif" alt=""></p>
+<h4 id="tsumiki"><a href="#tsumiki" class="headerlink" title="tsumiki"></a>tsumiki</h4><p><img src="https://huaji8.top/img/live2d/tsumiki.gif" alt=""></p>
+<h4 id="wanko"><a href="#wanko" class="headerlink" title="wanko"></a>wanko</h4><p><img src="https://huaji8.top/img/live2d/wanko.gif" alt=""></p>
+<h4 id="z16"><a href="#z16" class="headerlink" title="z16"></a>z16</h4><p><img src="https://huaji8.top/img/live2d/z16.gif" alt=""></p>
+<h4 id="hibiki"><a href="#hibiki" class="headerlink" title="hibiki"></a>hibiki</h4><p><img src="https://huaji8.top/img/live2d/hibiki.gif" alt=""></p>
+<h4 id="koharu"><a href="#koharu" class="headerlink" title="koharu"></a>koharu</h4><p><img src="https://huaji8.top/img/live2d/koharu.gif" alt=""></p>
+<h4 id="haruto"><a href="#haruto" class="headerlink" title="haruto"></a>haruto</h4><p><img src="https://huaji8.top/img/live2d/haruto.gif" alt=""></p>
+<h4 id="Unitychan"><a href="#Unitychan" class="headerlink" title="Unitychan"></a>Unitychan</h4><p><img src="https://huaji8.top/img/live2d/Unitychan.gif" alt=""></p>
+<h4 id="tororo"><a href="#tororo" class="headerlink" title="tororo"></a>tororo</h4><p><img src="https://huaji8.top/img/live2d/tororo.gif" alt=""></p>
+<h4 id="hijiki"><a href="#hijiki" class="headerlink" title="hijiki"></a>hijiki</h4><p><img src="https://huaji8.top/img/live2d/hijiki.gif" alt=""></p>
+<h2 id="食用方法："><a href="#食用方法：" class="headerlink" title="食用方法："></a>食用方法：</h2><pre><code>npm install -save hexo-helper-live2d
+</code></pre><p>将下面的代码加入主题。</p>
+<pre><code>&lt;%- live2d() %&gt;
+</code></pre><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>有2种方法</p>
+<h4 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h4><p>在 ejs 中添加参数</p>
+<pre><code class="js">&lt;%- live2d({
+    model: <span class="string">"nipsilon"</span>
+}) %&gt;
+</code></pre>
+<h4 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h4><p>在 hexo 的 _config.yml 中添加参数</p>
+<pre><code class="yml"><span class="attr">live2d:</span>
+<span class="attr">  model:</span> <span class="string">nipsilon</span>
+<span class="attr">  bottom:</span> <span class="bullet">-60</span>
+</code></pre>
+<blockquote>
+<p>第二种配置会覆盖第一种</p>
+</blockquote>
+<h2 id="配置项"><a href="#配置项" class="headerlink" title="配置项"></a>配置项</h2><ul>
+<li>model 模型名称 默认值: z16<ul>
+<li>Gantzert_Felixander</li>
+<li>Epsilon2.1</li>
+<li>haru</li>
+<li>miku</li>
+<li>ni-j</li>
+<li>nico</li>
+<li>nito</li>
+<li>nipsilon</li>
+<li>nietzsche</li>
+<li>shizuku</li>
+<li>tsumiki</li>
+<li>wanko</li>
+<li>z16</li>
+<li>hibiki</li>
+<li>koharu</li>
+<li>haruto</li>
+<li>Unitychan</li>
+<li>tororo</li>
+<li>hijiki</li>
+</ul>
+</li>
+<li>width 宽度 默认值: 150</li>
+<li>height 高度 默认值： 300</li>
+<li>className <code>&lt;canvas&gt;</code> 元素的类名 默认值： live2d</li>
+<li>id <code>&lt;canvas&gt;</code> 元素的id 默认值： live2dcanvas</li>
+<li>bottom <code>&lt;canvas&gt;</code> 元素的底部偏移 默认值： -20<br>  如果嫌模型位置不正确 可以调整这个参数</li>
+</ul>
+<p>Enjoy!</p>
+<blockquote>
+<p>我第一个hexo插件,点个star,点个watch吧。</p>
+</blockquote>
+<p>Github: <a href="https://github.com/EYHN/hexo-helper-live2d">https://github.com/EYHN/hexo-helper-live2d</a></p>
+<p>issues: <a href="https://github.com/EYHN/hexo-helper-live2d/issues">https://github.com/EYHN/hexo-helper-live2d/issues</a></p>
+<p>求英文好的小伙伴提交一个英文版的README，直接提交PR就可以啦!</p>
+<h2 id="Todo"><a href="#Todo" class="headerlink" title="Todo"></a>Todo</h2><ul>
+<li>实现互动对话框</li>
+</ul>
+<h2 id="About-me"><a href="#About-me" class="headerlink" title="About me"></a>About me</h2><p><a href="https://delusion.coding.me/"><img src="https://img.shields.io/badge/author-cneyhn-green.svg?style=flat-square" alt="Author"></a><br><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=&amp;site=qq&amp;menu=yes"><img src="https://img.shields.io/badge/QQ-1106996185-blue.svg?style=flat-square" alt="QQ"></a><br><a href=""><img src="https://img.shields.io/badge/Emali%20me-cneyhn@gmail.com-green.svg?style=flat-square" alt="Email"></a></p>
+<h2 id="License-许可证"><a href="#License-许可证" class="headerlink" title="License 许可证"></a>License 许可证</h2><p><a href="https://raw.githubusercontent.com/EYHN/hexo-helper-live2d/master/LICENSE"><img src="https://img.shields.io/github/license/EYHN/hexo-helper-live2d.svg?style=flat-square" alt="license"></a></p>
+<p>Open sourced under the GPL v2.0 license.</p>
+<p>根据 GPL V2.0 许可证开源。</p>

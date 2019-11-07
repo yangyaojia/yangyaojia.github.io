@@ -1,0 +1,258 @@
+@charset "UTF-8";
+	a,body,div,h3,html,img,li,object,p,ul {
+	padding:0;
+	margin:0
+}
+li,ul {
+	list-style:none
+}
+body,html {
+	/*
+	min-width:1280px;
+	background-color:#611b1b;
+	*/
+	font-family:Microsoft Yahei,tahoma,Arial,Helvetica,Hiragino Sans GB,宋体,sans-serif
+}
+input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
+	-webkit-appearance:none!important;
+	margin:0
+}
+input[type=number] {
+	-moz-appearance:textfield
+}
+::-webkit-scrollbar {
+	display:none
+}
+
+
+.main-wrap {
+/*
+	position:relative;
+	width:100%;
+	height:1153px;
+	margin:0 auto;
+	background:url("http://activity.hdslb.com/zzjs/20161212bnj2017_video/img/bg_page.jpg") 0 -60px no-repeat;
+	font-size:14px;
+	letter-spacing:1px
+	*/
+}
+
+.main-wrap .video-wrap .dialog {
+	width:170px;
+	height:86px;
+	font-size:14px;
+	color:#624113;
+	line-height:22px;
+	background:url("../img/dialog_bg.png") 50% no-repeat;
+	display:none
+}
+.main-wrap .video-wrap .text-center {
+	text-align:center;
+	line-height:55px
+}
+.main-wrap .video-wrap .left-22-wrap {
+	position:fixed;
+	top:190px;
+	left:-65px;
+	z-index:2
+}
+.main-wrap .video-wrap .left-22-wrap .left-22-img {
+	position:relative;
+	width:380px;
+	height:770px;
+	background:url("https://yangyaojia.github.io/img/2233/22_set_01.png") 50% no-repeat;
+	z-index:1
+}
+.main-wrap .video-wrap .left-22-wrap .click-chest-22 {
+	width:95px;
+	height:60px;
+	position:absolute;
+	top:216px;
+	left:134px;
+	cursor:-webkit-grab;
+	z-index:5
+}
+.main-wrap .video-wrap .left-22-wrap .click-ass-22 {
+	width:110px;
+	height:80px;
+	position:absolute;
+	top:350px;
+	left:125px;
+	cursor:-webkit-grab;
+	z-index:5
+}
+.main-wrap .video-wrap .left-22-wrap .click-other-22 {
+	width:150px;
+	height:740px;
+	position:absolute;
+	top:20px;
+	left:85px;
+	cursor:pointer;
+	z-index:3
+}
+.main-wrap .video-wrap .left-22-wrap .talk-22 {
+	position:absolute;
+	top:-73px;
+	left:82px
+}
+.main-wrap .video-wrap .left-22-wrap .talk-22-text {
+	padding:10px
+}
+.main-wrap .video-wrap .right-33-wrap {
+	position:fixed;
+	top:190px;
+	right:-60px;
+	z-index:2
+}
+.main-wrap .video-wrap .right-33-wrap .right-33-img {
+	position:relative;
+	width:380px;
+	height:770px;
+	background:url("https://yangyaojia.github.io/img/2233/33_set_01.png") 50% no-repeat;
+	z-index:1
+}
+.main-wrap .video-wrap .right-33-wrap .click-chest-33 {
+	width:75px;
+	height:50px;
+	position:absolute;
+	top:266px;
+	left:163px;
+	z-index:5
+}
+.main-wrap .video-wrap .right-33-wrap .click-ass-33 {
+	width:96px;
+	height:85px;
+	position:absolute;
+	top:388px;
+	left:155px;
+	z-index:5
+}
+.main-wrap .video-wrap .right-33-wrap .click-other-33 {
+	width:140px;
+	height:680px;
+	position:absolute;
+	top:84px;
+	left:150px;
+	cursor:pointer;
+	z-index:3
+}
+.main-wrap .video-wrap .right-33-wrap .talk-33 {
+	position:absolute;
+	top:-16px;
+	left:130px
+}
+.main-wrap .video-wrap .right-33-wrap .talk-33-text {
+	padding:10px
+}
+.animate-show-dialog {
+	display:block!important;
+	-webkit-animation:showDialog 3s ease-out 0s 1;
+	animation:showDialog 3s ease-out 0s 1;
+	-webkit-animation-fill-mode:forwards;
+	animation-fill-mode:forwards
+}
+.animation-shake {
+	-webkit-animation:shake 1.5s ease-in-out 1;
+	animation:shake 1.5s ease-in-out 1
+}
+@-webkit-keyframes shake {
+	0% {
+	-webkit-transform:rotate(0deg)
+}
+20% {
+	-webkit-transform:rotate(-20deg)
+}
+40% {
+	-webkit-transform:rotate(20deg)
+}
+60% {
+	-webkit-transform:rotate(-15deg)
+}
+80% {
+	-webkit-transform:rotate(5deg)
+}
+to {
+	-webkit-transform:rotate(0deg)
+}
+}@keyframes shake {
+	0% {
+	transform:rotate(0deg)
+}
+20% {
+	transform:rotate(-20deg)
+}
+40% {
+	transform:rotate(20deg)
+}
+60% {
+	transform:rotate(-15deg)
+}
+80% {
+	transform:rotate(5deg)
+}
+to {
+	transform:rotate(0deg)
+}
+}
+@-webkit-keyframes showDialog {
+	0% {
+	opacity:0;
+	-webkit-transform:translate3d(0,-20px,0)
+}
+20% {
+	opacity:1;
+	-webkit-transform:translateZ(0)
+}
+80% {
+	opacity:1;
+	-webkit-transform:translateZ(0)
+}
+to {
+	opacity:0;
+	-webkit-transform:translate3d(0,-20px,0)
+}
+}@keyframes showDialog {
+	0% {
+	opacity:0;
+	transform:translate3d(0,-20px,0)
+}
+20% {
+	opacity:1;
+	transform:translateZ(0)
+}
+80% {
+	opacity:1;
+	transform:translateZ(0)
+}
+to {
+	opacity:0;
+	transform:translate3d(0,-20px,0)
+}
+}.animate-dialog-scale {
+	-webkit-animation:dialogScale .3s ease-out 0s 1;
+	animation:dialogScale .3s ease-out 0s 1;
+	-webkit-animation-fill-mode:forwards;
+	animation-fill-mode:forwards
+}
+@-webkit-keyframes dialogScale {
+	0% {
+	-webkit-transform:scale(1)
+}
+50% {
+	-webkit-transform:scale(1.03)
+}
+to {
+	-webkit-transform:scale(1)
+}
+}@keyframes dialogScale {
+	0% {
+	transform:scale(1)
+}
+50% {
+	transform:scale(1.03)
+}
+to {
+	transform:scale(1)
+}
+
+/*# sourceMappingURL=main.css.map*/
