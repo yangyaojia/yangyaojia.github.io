@@ -31,14 +31,14 @@
 <pre><code>&lt;%- live2d() %&gt;
 </code></pre><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>有2种方法</p>
 <h4 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h4><p>在 ejs 中添加参数</p>
-<pre><code class="js">&lt;%- live2d({
-    model: <span class="string">"nipsilon"</span>
+<pre><code class="lang-js">&lt;%- live2d({
+    model: &quot;nipsilon&quot;
 }) %&gt;
 </code></pre>
 <h4 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h4><p>在 hexo 的 _config.yml 中添加参数</p>
-<pre><code class="yml"><span class="attr">live2d:</span>
-  <span class="attr">model:</span> <span class="string">nipsilon</span>
-  <span class="attr">bottom:</span> <span class="number">-60</span>
+<pre><code class="lang-yml">live2d:
+  model: nipsilon
+  bottom: -60
 </code></pre>
 <blockquote>
 <p>第二种配置会覆盖第一种</p>
